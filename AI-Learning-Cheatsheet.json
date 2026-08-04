@@ -1,0 +1,309 @@
+{
+  "title": "AI Learning Quick Cheat Sheet",
+  "author": "Anastasia Shapovalova",
+  "lastUpdated": "2026-08-04",
+  "learningRoadmap": [
+    {
+      "stage": 1,
+      "title": "Intro to AI",
+      "topics": [
+        "What is AI",
+        "Impacts",
+        "Future Trends",
+        "Applications"
+      ]
+    },
+    {
+      "stage": 2,
+      "title": "Mathematics",
+      "topics": [
+        "Statistics",
+        "Probability",
+        "Linear Algebra",
+        "Calculus"
+      ]
+    },
+    {
+      "stage": 3,
+      "title": "Programming",
+      "topics": [
+        "Python",
+        "R",
+        "Java"
+      ]
+    },
+    {
+      "stage": 4,
+      "title": "Big Data",
+      "topics": [
+        "Hadoop",
+        "Spark",
+        "Cassandra",
+        "MongoDB"
+      ]
+    },
+    {
+      "stage": 5,
+      "title": "Data Science",
+      "topics": [
+        "Acquisition",
+        "Preparation",
+        "Data Analysis",
+        "Manipulation"
+      ]
+    },
+    {
+      "stage": 6,
+      "title": "Machine Learning",
+      "topics": [
+        "Supervised Learning",
+        "Unsupervised Learning",
+        "Reinforcement Learning"
+      ]
+    },
+    {
+      "stage": 7,
+      "title": "Deep Learning",
+      "topics": [
+        "TensorFlow",
+        "Keras",
+        "PyTorch",
+        "CNN",
+        "RNN",
+        "GAN",
+        "LSTM"
+      ]
+    },
+    {
+      "stage": 8,
+      "title": "AI Engineer",
+      "topics": []
+    }
+  ],
+  "aiConcepts": {
+    "mainFields": [
+      {
+        "name": "Generative AI",
+        "description": "生成式AI",
+        "subtopics": [
+          "Text Generation",
+          "Image Generation",
+          "Summarization"
+        ]
+      },
+      {
+        "name": "Deep Learning",
+        "description": "深度學習",
+        "subtopics": [
+          "CNNs",
+          "RNNs",
+          "Transformers"
+        ]
+      },
+      {
+        "name": "Artificial Intelligence",
+        "description": "人工智能",
+        "subtopics": [
+          "Reasoning",
+          "Planning",
+          "Problem Solving"
+        ]
+      },
+      {
+        "name": "Machine Learning",
+        "description": "機器學習",
+        "subtopics": [
+          "Algorithms",
+          "Training Data",
+          "Predictions"
+        ]
+      }
+    ],
+    "basicConcepts": [
+      {
+        "name": "Machine Learning",
+        "description": "使用數據進行預測"
+      },
+      {
+        "name": "Neural Networks",
+        "description": "模擬神經元的網絡"
+      },
+      {
+        "name": "Deep Learning",
+        "description": "具有多層的神經網絡"
+      },
+      {
+        "name": "NLP",
+        "description": "自然語言處理"
+      },
+      {
+        "name": "Computer Vision",
+        "description": "機器解釋視覺信息"
+      },
+      {
+        "name": "Reinforcement Learning",
+        "description": "通過試錯學習"
+      },
+      {
+        "name": "Transfer Learning",
+        "description": "應用知識到新領域"
+      },
+      {
+        "name": "Semi-supervised Learning",
+        "description": "使用標籤和非標籤數據"
+      },
+      {
+        "name": "Supervised Learning",
+        "description": "使用標籤數據進行預測"
+      },
+      {
+        "name": "Expert Systems",
+        "description": "模擬專家決策"
+      },
+      {
+        "name": "Fuzzy Logic",
+        "description": "處理不確定信息"
+      },
+      {
+        "name": "Cognitive Algorithms",
+        "description": "模擬人類思維"
+      }
+    ]
+  },
+  "topAITools": [
+    {
+      "rank": 1,
+      "name": "ChatGPT",
+      "usage": "文本生成、對話助手"
+    },
+    {
+      "rank": 2,
+      "name": "Claude",
+      "usage": "高級推理、代碼��析"
+    },
+    {
+      "rank": 3,
+      "name": "Gemini",
+      "usage": "多模態AI、跨領域應用"
+    },
+    {
+      "rank": 4,
+      "name": "Perplexity",
+      "usage": "AI搜索引擎"
+    },
+    {
+      "rank": 5,
+      "name": "Midjourney",
+      "usage": "AI圖像生成"
+    },
+    {
+      "rank": 6,
+      "name": "NotebookLM",
+      "usage": "研究筆記和學習"
+    },
+    {
+      "rank": 7,
+      "name": "Cursor",
+      "usage": "AI編程助手"
+    },
+    {
+      "rank": 8,
+      "name": "Canva AI",
+      "usage": "AI設計工具"
+    },
+    {
+      "rank": 9,
+      "name": "Gamma",
+      "usage": "AI演示文稿生成"
+    },
+    {
+      "rank": 10,
+      "name": "ElevenLabs",
+      "usage": "AI語音合成"
+    }
+  ],
+  "datasetWebsites": [
+    {
+      "name": "Kaggle",
+      "description": "機器學習競賽和數據集平台",
+      "url": "https://www.kaggle.com"
+    },
+    {
+      "name": "UCI Machine Learning Repository",
+      "description": "經典機器學習數據集",
+      "url": "https://archive.ics.uci.edu/ml/index.php"
+    },
+    {
+      "name": "OpenML",
+      "description": "開放機器學習實驗平台",
+      "url": "https://www.openml.org"
+    },
+    {
+      "name": "Google Dataset Search",
+      "description": "谷歌數據集搜索引擎",
+      "url": "https://datasetsearch.research.google.com"
+    },
+    {
+      "name": "Hugging Face Datasets",
+      "description": "NLP和ML數據集",
+      "url": "https://huggingface.co/datasets"
+    },
+    {
+      "name": "AWS Open Data Registry",
+      "description": "雲端開放數據資源",
+      "url": "https://registry.opendata.aws"
+    }
+  ],
+  "educationPlatforms": [
+    {
+      "rank": 1,
+      "name": "GenAI Academy",
+      "specialty": "生成式AI專業課程"
+    },
+    {
+      "rank": 2,
+      "name": "DeepLearning AI",
+      "specialty": "深度學習專家課程"
+    },
+    {
+      "rank": 3,
+      "name": "Coursera",
+      "specialty": "全面的AI/ML課程"
+    },
+    {
+      "rank": 4,
+      "name": "fast.ai",
+      "specialty": "實踐型深度學習"
+    },
+    {
+      "rank": 5,
+      "name": "Kaggle Learn",
+      "specialty": "邊做邊學"
+    },
+    {
+      "rank": 6,
+      "name": "Google AI",
+      "specialty": "谷歌官方AI教學"
+    },
+    {
+      "rank": 7,
+      "name": "Microsoft Learn",
+      "specialty": "微軟AI認證課程"
+    },
+    {
+      "rank": 8,
+      "name": "edX",
+      "specialty": "大學級別課程"
+    },
+    {
+      "rank": 9,
+      "name": "Udacity",
+      "specialty": "納米學位項目"
+    },
+    {
+      "rank": 10,
+      "name": "DataCamp",
+      "specialty": "數據科學專業培訓"
+    }
+  ]
+}
