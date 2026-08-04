@@ -1,0 +1,9 @@
+Stage,Title,Topics,Duration (Recommended)
+1,Intro to AI,What is AI; Impacts; Future Trends; Applications,2-4 weeks
+2,Mathematics,Statistics; Probability; Linear Algebra; Calculus,4-6 weeks
+3,Programming,Python; R; Java,4-8 weeks
+4,Big Data,Hadoop; Spark; Cassandra; MongoDB,4-6 weeks
+5,Data Science,Acquisition; Preparation; Data Analysis; Manipulation,6-8 weeks
+6,Machine Learning,Supervised Learning; Unsupervised Learning; Reinforcement Learning,8-12 weeks
+7,Deep Learning,TensorFlow; Keras; PyTorch; CNN; RNN; GAN; LSTM,8-12 weeks
+8,AI Engineer,Advanced Topics; Project Development; Career Focus,Ongoing
