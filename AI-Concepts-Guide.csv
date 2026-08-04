@@ -1,0 +1,17 @@
+Category,Concept,Description,Key Topics
+Main Fields,Generative AI,生成式AI,Text Generation; Image Generation; Summarization
+Main Fields,Deep Learning,深度學習,CNNs; RNNs; Transformers
+Main Fields,Artificial Intelligence,人工智能,Reasoning; Planning; Problem Solving
+Main Fields,Machine Learning,機器學習,Algorithms; Training Data; Predictions
+Basic Concepts,Machine Learning,使用數據進行預測,Supervised; Unsupervised; Reinforcement
+Basic Concepts,Neural Networks,模擬神經元的網絡,Perceptrons; LSTM; Multilayer
+Basic Concepts,Deep Learning,具有多層的神經網絡,CNNs; RNNs; Transformers
+Basic Concepts,NLP,自然語言處理,Text Understanding; Language Generation
+Basic Concepts,Computer Vision,機器解釋視覺信息,Image Classification; Object Detection
+Basic Concepts,Reinforcement Learning,通過試錯學習,Rewards; Trial and Error
+Basic Concepts,Transfer Learning,應用知識到新領域,Domain Adaptation; Fine-tuning
+Basic Concepts,Semi-supervised Learning,使用標籤和非標籤數據,Mixed Data Training
+Basic Concepts,Supervised Learning,使用標籤數據進行預測,Classification; Regression
+Basic Concepts,Expert Systems,模擬專家決策,Knowledge Bases; Rule Engines
+Basic Concepts,Fuzzy Logic,處理不確定信息,Uncertainty Handling
+Basic Concepts,Cognitive Algorithms,模擬人類思維,Human-like Processing
