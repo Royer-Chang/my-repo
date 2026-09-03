@@ -88,25 +88,30 @@
 
 ---
 
-## 3. 視覺化分類圖（Markdown 文字版）
+## 3. 視覺化分類圖（Mermaid）
 
-```text
-                         方法論 / 風格
-                              ↑
-                              |
-          multica-ai/andrej-karpathy-skills   JuliusBrussee/caveman
-                              |
-        obra/superpowers      |      mattpocock/skills      addyosmani/agent-skills
-                              |
-------------------------------+--------------------------------→ 場景專精
-                              |
-        anthropics/skills     |   nextlevelbuilder/ui-ux-pro-max-skill
-        ComposioHQ/awesome-claude-skills     Leonxlnx/taste-skill
-                              |
-                              |
-                    ayghri/i-have-adhd
-                              ↓
-                         實用工作流 / 個人情境
+```mermaid
+flowchart TB
+    A[AI Skill Repo 生態] --> B[通用能力增強型]
+    A --> C[平台 / 模型生態型]
+    A --> D[領域專精型]
+    A --> E[方法論 / 人格風格型]
+    A --> F[特殊使用者情境型]
+
+    B --> B1[obra/superpowers]
+    B --> B2[mattpocock/skills]
+    B --> B3[addyosmani/agent-skills]
+
+    C --> C1[anthropics/skills]
+    C --> C2[ComposioHQ/awesome-claude-skills]
+
+    D --> D1[nextlevelbuilder/ui-ux-pro-max-skill]
+    D --> D2[Leonzlnx/taste-skill]
+
+    E --> E1[multica-ai/andrej-karpathy-skills]
+    E --> E2[JuliusBrussee/caveman]
+
+    F --> F1[ayghri/i-have-adhd]
 ```
 
 ---
