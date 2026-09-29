@@ -1,0 +1,40 @@
+Task Name,Status,Priority,Estimated Hours,Dependencies,Acceptance Criteria
+Setup PlatformIO/Arduino project,Todo,High,1.0,None,Project builds and flashes successfully
+Initialize M5Stack Core2 runtime,Todo,High,1.5,Setup PlatformIO/Arduino project,Boot screen renders and loop runs stable
+Create pin_config.h and sensor_config.h,Todo,High,1.0,Setup PlatformIO/Arduino project,All required pins/constants defined and reused in modules
+Implement logger/debug output,Todo,Medium,1.0,Initialize M5Stack Core2 runtime,Serial logs show sensor and state updates
+Create mock-data mode for UI,Todo,Medium,1.0,Initialize M5Stack Core2 runtime,UI works without physical sensors
+Build base UI navigation shell (Home/Air/Energy/Control/Alert),Todo,High,2.0,Initialize M5Stack Core2 runtime,Page switching works reliably
+Hardware wiring and power validation,Todo,High,2.0,Create pin_config.h and sensor_config.h,All modules power on with common GND and no brownout
+Integrate ENV III (temp/humidity/pressure),Todo,High,2.0,Hardware wiring and power validation,Live values update every 1-2 seconds
+Integrate PM2.5 sensor (PMSA003I),Todo,High,3.0,Hardware wiring and power validation,PM2.5 values parsed and displayed
+Integrate VOC sensor (SGP30/CCS811),Todo,High,3.0,Hardware wiring and power validation,VOC/eCO2 values readable and stable
+Integrate CO2 sensor (SCD30/MH-Z19B, optional),Todo,Medium,3.0,Hardware wiring and power validation,CO2 ppm values displayed correctly
+Integrate BH1750 light sensor,Todo,Medium,1.5,Hardware wiring and power validation,Lux values displayed and refreshed
+Add sensor smoothing filter (EMA),Todo,High,2.0,Integrate ENV III (temp/humidity/pressure),Displayed values are stable with reduced jitter
+Add sensor timeout/error handling,Todo,High,2.0,Integrate PM2.5 sensor (PMSA003I),Sensor failure shows fallback state without crash
+Define health threshold rules,Todo,High,2.0,"Integrate ENV III (temp/humidity/pressure); Integrate PM2.5 sensor (PMSA003I); Integrate VOC sensor (SGP30/CCS811)",System outputs Good/Moderate/Poor consistently
+Implement comfort score engine,Todo,High,3.0,"Define health threshold rules; Integrate BH1750 light sensor",Comfort score calculated and shown on UI
+Implement air-quality evaluation engine,Todo,High,2.0,"Define health threshold rules; Integrate CO2 sensor (SCD30/MH-Z19B, optional)",AQ state and suggestion text update correctly
+Define energy-saving rule set,Todo,Medium,2.5,Build base UI navigation shell (Home/Air/Energy/Control/Alert),Rules for long-on devices and night lighting are implemented
+Implement alert state machine,Todo,High,3.0,"Implement comfort score engine; Implement air-quality evaluation engine",Alerts trigger/clear with deterministic transitions
+Implement alert message pipeline,Todo,Medium,1.5,Implement alert state machine,Alert text appears in Alert page and logs
+Relay GPIO basic control test,Todo,High,2.0,Hardware wiring and power validation,Relay can be toggled safely from firmware
+Implement device control logic (Light/Fan),Todo,High,2.0,Relay GPIO basic control test,Device state toggles and persists in runtime
+Sync control states to UI,Todo,High,2.0,"Implement device control logic (Light/Fan); Build base UI navigation shell (Home/Air/Energy/Control/Alert)",UI switch states match hardware states
+Add anti-misoperation guard (debounce/cooldown),Todo,Medium,1.5,Implement device control logic (Light/Fan),Rapid taps do not cause invalid toggles
+Control action history logging,Todo,Low,1.0,Implement logger/debug output,Control events are timestamped in logs
+Implement Home Overview page,Todo,High,3.0,"Build base UI navigation shell (Home/Air/Energy/Control/Alert); Integrate ENV III (temp/humidity/pressure)",Home page shows core metrics and system state
+Implement Air Quality page,Todo,High,2.5,"Build base UI navigation shell (Home/Air/Energy/Control/Alert); Implement air-quality evaluation engine",Air page shows PM2.5/VOC/CO2 and AQ status
+Implement Energy page,Todo,Medium,2.5,"Build base UI navigation shell (Home/Air/Energy/Control/Alert); Define energy-saving rule set",Energy suggestions and long-on reminders visible
+Implement Control page,Todo,High,2.5,"Build base UI navigation shell (Home/Air/Energy/Control/Alert); Sync control states to UI",Control page toggles hardware and updates state
+Implement Alert page,Todo,High,2.0,"Build base UI navigation shell (Home/Air/Energy/Control/Alert); Implement alert message pipeline",Active alerts and mitigation tips are listed
+UI responsiveness optimization,Todo,Medium,2.0,"Implement Home Overview page; Implement Air Quality page; Implement Energy page; Implement Control page; Implement Alert page",Page transitions are smooth and readable
+Wi-Fi connection manager,Todo,Medium,2.0,Initialize M5Stack Core2 runtime,Auto-reconnect works after AP interruption
+MQTT publish telemetry,Todo,Low,3.0,Wi-Fi connection manager,Telemetry topics publish successfully
+MQTT subscribe remote control,Todo,Low,3.0,"MQTT publish telemetry; Implement device control logic (Light/Fan)",Remote control commands trigger local actions
+End-to-end flow integration test,Todo,High,3.0,"Implement Home Overview page; Implement Air Quality page; Implement Energy page; Implement Control page; Implement Alert page",Full flow runs without blocking or crashes
+Long-run stability test (2-4h),Todo,High,4.0,End-to-end flow integration test,System runs continuously without reboot/hang
+Prepare 3-5 min demo script,Todo,High,2.0,End-to-end flow integration test,Script covers sensing-alert-control-value story
+Final bug-fix and demo polish,Todo,High,4.0,"Long-run stability test (2-4h); Prepare 3-5 min demo script",Demo passes full rehearsal with >90% success
+Release v1.0 demo firmware,Todo,High,1.5,Final bug-fix and demo polish,Firmware image/tag/release notes prepared
